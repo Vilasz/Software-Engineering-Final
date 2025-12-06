@@ -23,7 +23,6 @@ class Node(ABC):
         self._children.remove(child)
 
     def get_children(self) -> List["Node"]:
-        # devolvemos uma cópia para evitar modificações externas diretas
         return list(self._children)
 
 
@@ -52,7 +51,7 @@ class LeafNode(Node):
         self.label = label
 
     # bloqueia a adição de filhos para manter a semântica de folha
-    def add_child(self, child: "Node") -> None:  # type: ignore[override]
+    def add_child(self, child: "Node") -> None: 
         raise RuntimeError("LeafNode não pode receber filhos.")
 
     def accept(self, visitor: "Visitor") -> None:
@@ -194,7 +193,7 @@ class PruningState(TreeBuilderState):
             print(
                 f"[PruningState] Nó '{node.name}' não possui filhos para poda."
             )
-        # Após a poda, voltamos para o estado de splitting para um novo ciclo
+        # Após a poda voltamos para o estado de splitting para um novo ciclo
         self.builder.change_to_splitting()
 
 
