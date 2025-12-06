@@ -1,8 +1,8 @@
 # Projeto Individual de Modelagem: Árvore de Decisão (Mock) - Engenharia de Software
 
-Este projeto consiste na modelagem e implementação de uma estrutura de Árvore de Decisão Simplificada em Python. O foco principal do trabalho não é a implementação algorítmica de machine learning, mas sim a aplicação rigorosa de quatro padrões de projeto (Design Patterns) fundamentais: Composite, Iterator, Visitor e State.
+Este projeto consiste na modelagem e implementação de uma estrutura de Árvore de Decisão Simplificada em Python. O foco principal aqui é a aplicação rigorosa de quatro padrões de projeto: Composite, Iterator, Visitor e State.
 
-O código simula o comportamento de construção, navegação e análise de uma árvore, utilizando "mocks" (simulações via prints) para demonstrar as interações entre os objetos.
+Simulamos aqui o comportamento de construção, navegação e análise de uma árvore, utilizando "mocks" (simulações via prints) para demonstrar as interações entre os objetos.
 
 O objetivo foi modelar uma solução desacoplada e extensível que atendesse aos seguintes requisitos:
 1.  Estrutura Hierárquica: Modelada com o padrão Composite.
